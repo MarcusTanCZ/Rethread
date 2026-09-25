@@ -13,6 +13,9 @@ the browser, needs no server and makes no network requests in its default mode.
 (about 365 KB) and works straight from the file system. Data is saved in the browser's
 localStorage.
 
+**Publishing on Manus:** use the prompt in [MANUS_PROMPT.md](MANUS_PROMPT.md). It tells the agent to
+serve the built file unchanged and gives it a 12 point checklist to verify the live site.
+
 **For development:**
 
 ```bash

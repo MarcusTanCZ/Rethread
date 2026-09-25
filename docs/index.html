@@ -1,11 +1,26 @@
 <!doctype html>
+<!--
+  Rethread: decision system of record (hackathon prototype, fictional Calder Group data).
+
+  DEPLOYMENT NOTE FOR PEOPLE AND AGENTS
+  This file is a finished, self-contained build: React, styles and data are compiled and
+  inlined. Serve it unchanged as the site's index page. Do not rebuild, reformat, minify,
+  split, or add scripts, analytics or external resources. It makes no network requests and
+  stores its demo data in the browser's localStorage. Source: github.com/MarcusTanCZ/Rethread
+-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rethread</title>
-    <!-- Empty inline icon: stops the browser asking for /favicon.ico. -->
-    <link rel="icon" href="data:," />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Rethread · Decision system of record</title>
+    <meta name="description" content="Rethread watches the assumptions behind past business decisions and reopens a decision when new evidence breaks one, resurfacing the options rejected at the time. Demo with fictional Calder Group data." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rethread · Decision system of record" />
+    <meta property="og:description" content="Watches the assumptions behind past decisions, reopens a decision when evidence breaks one, and brings back the options rejected at the time. Sign in with ceo / demo1234." />
+    <!-- Inline icon (the Rethread mark), so the browser never requests /favicon.ico. -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Crect width='24' height='24' rx='5' fill='%230f172a'/%3E%3Cpath d='M5 16.5c0-4.5 3-7.5 7-7.5s7 3 7 7.5' stroke='%233b6fd8' stroke-width='2.2' stroke-linecap='round'/%3E%3Cpath d='M8.5 16.5c0-2.3 1.6-4 3.5-4s3.5 1.7 3.5 4' stroke='%233b6fd8' stroke-width='2.2' stroke-linecap='round' opacity='.55'/%3E%3Ccircle cx='12' cy='16.5' r='2' fill='%233b6fd8'/%3E%3C/svg%3E" />
     <script type="module" crossorigin>var ym=Object.defineProperty;var vm=(l,a,c)=>a in l?ym(l,a,{enumerable:!0,configurable:!0,writable:!0,value:c}):l[a]=c;var pn=(l,a,c)=>vm(l,typeof a!="symbol"?a+"":a,c);(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const f of document.querySelectorAll('link[rel="modulepreload"]'))u(f);new MutationObserver(f=>{for(const p of f)if(p.type==="childList")for(const g of p.addedNodes)g.tagName==="LINK"&&g.rel==="modulepreload"&&u(g)}).observe(document,{childList:!0,subtree:!0});function c(f){const p={};return f.integrity&&(p.integrity=f.integrity),f.referrerPolicy&&(p.referrerPolicy=f.referrerPolicy),f.crossOrigin==="use-credentials"?p.credentials="include":f.crossOrigin==="anonymous"?p.credentials="omit":p.credentials="same-origin",p}function u(f){if(f.ep)return;f.ep=!0;const p=c(f);fetch(f.href,p)}})();function Od(l){return l&&l.__esModule&&Object.prototype.hasOwnProperty.call(l,"default")?l.default:l}var Ea={exports:{}},qr={},Ca={exports:{}},le={};/**
  * @license React
  * react.production.min.js
@@ -383,5 +398,11 @@ Following our call, Petrolink agrees to add a quarterly price reset to the fixed
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="font: 14px/1.5 system-ui, sans-serif; max-width: 480px; margin: 80px auto; padding: 0 16px; color: #1e293b">
+        <strong>Rethread needs JavaScript.</strong> Please enable JavaScript in this browser and reload.
+        Everything runs locally; nothing is sent to a server.
+      </div>
+    </noscript>
   </body>
 </html>
